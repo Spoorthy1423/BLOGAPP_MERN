@@ -1,14 +1,14 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Your component paths
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}", // Include Flowbite components
-    "node_modules/flowbite/**/*.{js,jsx,ts,tsx}", // Include Flowbite styles
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('tailwind-scrollbar'),
   ],
-}
+};
